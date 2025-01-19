@@ -80,6 +80,9 @@ h2 {
 hr {
     margin-left: 3rem;
     margin-right: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: black;
 }
 
   
@@ -94,23 +97,30 @@ hr {
   
   /* Keyframes for the bounce effect */
   @keyframes bounce {
-    0% {
-        transform: translateX(0px);
+    0%{
+        transform: translateX(0px) skew(-5deg,-5deg);
       }
       100% {
         transform: translateX(700px);
       }
   }
   body{
+    transition: transform 5s ease-in-out;
     animation: backgroundColorChange 5s infinite alternate;
   }
   /* Keyframes for background color change */
 @keyframes backgroundColorChange {
-    0% {
+  0%{
+    background-color: rgb(68, 3, 68);
+  }
+    25% {
       background-color: rgb(2, 5, 42);
     }
     50%{
-        background-color: rgb(1, 18, 1);
+        background-color: rgb(1, 32, 1);
+    }
+    75%{
+      background-color: rgb(33, 53, 53);
     }
     100% {
       background-color: black;
@@ -126,9 +136,39 @@ hr {
 
   @keyframes bounceback {
     0% {
-      transform: translateX(200px);
+      transform: translateX(200px) skew(5deg,5deg);
     }
     100% {
       transform: translateX(-500px);
+    }
+  }
+  ul{
+    display: inline-flex;
+    margin-left: 50px;
+    list-style-type: none;
+  }
+  li img{
+    margin:2.5rem;
+  }
+  .img3,.img4,.img5{
+    animation: blink 5s infinite;
+  }
+  @keyframes blink {
+    0%{
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(0.8) skew(10deg,10deg);
+    }
+    50%{
+      transform: scale(1.2) skew(-10deg,-10deg);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @media (min-width: 0px) and (max-width: 1024px){
+    ul{
+      display: block;
     }
   }
