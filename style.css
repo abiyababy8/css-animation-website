@@ -44,8 +44,8 @@
     background-color: black;
     width: 100%;
     height: 200px;
-    /* bottom: 0;
-    left: 0;
+     bottom: 0;
+    /* left: 0;
     position: fixed; */
 }
 
@@ -53,6 +53,7 @@ footer {
     position: absolute;
     color: grey;
     margin-left: 38%;
+    /* bottom:0; */
 }
 
 .contactIcons {
@@ -167,8 +168,40 @@ hr {
       transform: scale(1);
     }
   }
+  .icon:hover i {
+    color: white;
+    animation: shake 0.75s;
+}
+
+@keyframes shake {
+    10% {
+        transform: rotate(15deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    30% {
+        transform: rotate(15deg);
+    }
+
+    40% {
+        transform: rotate(-15deg);
+    }
+}
+
+.up_arrow {
+    background-image: linear-gradient(to bottom right,  blue,black, green);
+    margin-top: -2rem;
+    margin-left: 600px;
+    border-radius: 100%;
+}
   @media (min-width: 0px) and (max-width: 1024px){
     ul{
       display: block;
+    }
+    #last{
+      bottom:0;
     }
   }
