@@ -40,6 +40,38 @@
     color: grey;
     border: 1px solid grey;
 }
+.learn{
+  color: white;
+  border: 1px solid white;
+  text-decoration: none;
+  background-color: black;
+}
+
+.learn:visited{
+color: white;
+}
+.description{
+  opacity: 0; /* Start fully transparent */
+  transform: translateX(-100%); /* Start off-screen to the left */
+  animation: fadeInLeft 2s ease-out forwards; /* Apply animation */
+}
+
+@keyframes fadeInLeft {
+  to {
+    opacity: 1; /* End fully visible */
+    transform: translateX(0); /* End at the original position */
+  }
+}
+.heading {
+  opacity: 0; /* Start fully transparent */
+  animation: fadeIn 2s ease-in forwards; /* Apply animation */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* End fully visible */
+  }
+}
 #last {
     background-color: black;
     width: 100%;
@@ -71,20 +103,20 @@ h2 {
     margin-left: 48%;
     color: grey;
 }
-
+hr {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+ color: black;
+}
 #last hr {
     margin-left: 3rem;
     margin-right: 3rem;
     color: grey;
 }
 
-hr {
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    color: black;
-}
+
 
   
   /* Styling for the image */
