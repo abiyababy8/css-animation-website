@@ -245,7 +245,7 @@ hr {
         transform: translateX(0px) skew(-5deg,-5deg);
       }
       100% {
-        transform: translateX(150px);
+        transform: translateX(120px);
       }
   }
     .image2{
@@ -258,10 +258,10 @@ hr {
   
     @keyframes bounceback {
       0% {
-        transform: translateX(300px) skew(5deg,5deg);
+        transform: translateX(200px) skew(5deg,5deg);
       }
       100% {
-        transform: translateX(165px);
+        transform: translateX(115px);
       }
     }
     ul{
